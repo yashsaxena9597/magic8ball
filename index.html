@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+   .con{
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color:rgba(255,255,255,0.51);
+  border-radius: 20px;
+  margin-top: 2%;
+  text-align: center;
+     ;
+}
+.confl
+{
+  
+  opacity: 9999;
+  background-size: cover;
+   background-image: url(back.jpg);
+   opacity: 0.7;
+  background-repeat:no-repeat; ;
+}
+.con1{
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color:rgba(255,255,255,0.51);
+  background-size: cover;
+  opacity: 2;
+  border-radius: 50%;
+  margin-top: 2%;
+  text-align: center;
+  padding: 2%;
+}
+.output{
+    width:20%;
+    height:10%;
+    background-color:white!important; 
+  }
+  .button {
+  background-color: #008CBA; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50%;
+
+}
+
+
+  </style>
+<title>Magic 8 Ball</title>
+</head>
+<body class="confl">
+ 
+  
+	<div class="con">
+		<h1 style="color:black;"><marquee behavior=alternate>Magic Eigth ball</marquee></h1>
+		
+	</div>
+	<div class="con1 ">
+		<h3 style="color: #2B0604  ">Let me answer Your Question!</h3>
+		<hr style="width: 50%;" >
+	
+	
+		
+  
+   <br><br>
+  <label for="lname" style="color: #210303  ;font-size:25px;">Enter Name :</h2></label>
+  <input type="text" value="" id="val" placeholder="" class="output" >
+  <br><br>
+  <input type="button" name="" onclick="Name()" value="Go on!" class="button"  >
+  <div style="display: none;" id="sit">
+  <p id="name" style="font-size: 40px;"></p>
+  <p id="Agree" style="font-size: 20px;"></p>
+  
+    <input type="radio" id="Yes" name="Situation" value="Yes" onclick="Question()" >
+  <label id="Yes1"name="Situation">Yes</label><br>
+  <input type="radio" id="No" name="Situation" value="No" onclick="No()" >
+  <label id="No1" name="Situation" >No</label><br>
+  </div>
+  <div id="Question" style="display: none" >
+   <label id="" >Question:</label>
+    <select id="ques" style="margin-top: 5%;" >
+  <option value="">How will be your life in future</option>
+  <option value="">How happy you will be</option>
+  <option value="">How  will you do in your studies?</option>
+  <option value="">How will you do  in your bussiness?</option>
+  <option value="">Will you be Going to college?</option>
+  <option value="">will you be well-settled before 30?</option>
+  <option value="">Will you be like living your life?</option>
+  <option value="">Will You be having kids in your early 30's?</option>
+</select>
+<br>
+<br>
+<p id="noti" style="">Click on the ball to know your Answer!</p>
+<br>
+  <label id="Msg" style="display: none;" >Here  is Your Future:</label>
+  <p id="Ans" style="text-decoration: underline;font-size: 25px;font-weight: bold;"></p>
+  <p id="noms" style="color: red;"></p>
+	</div>
+
+<div id="Ball">
+  <img alt="ball" src="magicBall.png" style="height: 20%; width: 20%; margin-top: 8%;" onclick="Answer()" >
+</div>
+<div id="thanxs"></div>
+
+	
+</div>
+
+ 
+<script src="ball.js"></script>
+</body>
+
+</html>
